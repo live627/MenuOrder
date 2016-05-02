@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.spanish_es.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Orden del Menú';
+$txt['menuorder_howsort?'] = 'Como quieres ordenar los objetos del menú?';
+$txt['menuorder_sortbybuttons'] = 'Botones Arriba/Abajo';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'esconder';
+$txt['menuorder_show'] = 'mostrar';
+$txt['menuorder_edit'] = 'editar';
+$txt['menuorder_up'] = 'arriba';
+$txt['menuorder_down'] = 'abajo';
+$txt['menuorder_save'] = 'Guardar';
+$txt['menuorder_saveorder'] = 'Guardar Orden';
+$txt['menuorder_sortchanged'] = 'Método de ordenado del menú fue cambiado a "%s".';
+$txt['menuorder_jssortsuccess'] = 'Objeto del menú fue guardado.';
+$txt['menuorder_hidesuccess'] = '"%s" fue escondido.';
+$txt['menuorder_showsuccess'] = '"%s" es ahora visible.';
+$txt['menuorder_renamesuccess'] = '"%s" fue renombrado a "%s".';
+$txt['menuorder_upsuccess'] = '"%s" fue movido arriba.';
+$txt['menuorder_downsuccess'] = '"%s" fue movido abajo.';
+// end "Menu Order" edit //
+//]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.spanish_es-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Orden del Menú';
+$txt['menuorder_howsort?'] = 'Como quieres ordenar los objetos del menú?';
+$txt['menuorder_sortbybuttons'] = 'Botones Arriba/Abajo';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'esconder';
+$txt['menuorder_show'] = 'mostrar';
+$txt['menuorder_edit'] = 'editar';
+$txt['menuorder_up'] = 'arriba';
+$txt['menuorder_down'] = 'abajo';
+$txt['menuorder_save'] = 'Guardar';
+$txt['menuorder_saveorder'] = 'Guardar Orden';
+$txt['menuorder_sortchanged'] = 'Método de ordenado del menú fue cambiado a "%s".';
+$txt['menuorder_jssortsuccess'] = 'Objeto del menú fue guardado.';
+$txt['menuorder_hidesuccess'] = '"%s" fue escondido.';
+$txt['menuorder_showsuccess'] = '"%s" es ahora visible.';
+$txt['menuorder_renamesuccess'] = '"%s" fue renombrado a "%s".';
+$txt['menuorder_upsuccess'] = '"%s" fue movido arriba.';
+$txt['menuorder_downsuccess'] = '"%s" fue movido abajo.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.spanish_latin.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Orden del Menú';
+$txt['menuorder_howsort?'] = 'Como quieres ordenar los objetos del menú?';
+$txt['menuorder_sortbybuttons'] = 'Botones Arriba/Abajo';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'esconder';
+$txt['menuorder_show'] = 'mostrar';
+$txt['menuorder_edit'] = 'editar';
+$txt['menuorder_up'] = 'arriba';
+$txt['menuorder_down'] = 'abajo';
+$txt['menuorder_save'] = 'Guardar';
+$txt['menuorder_saveorder'] = 'Guardar Orden';
+$txt['menuorder_sortchanged'] = 'Método de ordenado del menú fue cambiado a "%s".';
+$txt['menuorder_jssortsuccess'] = 'Objeto del menú fue guardado.';
+$txt['menuorder_hidesuccess'] = '"%s" fue escondido.';
+$txt['menuorder_showsuccess'] = '"%s" es ahora visible.';
+$txt['menuorder_renamesuccess'] = '"%s" fue renombrado a "%s".';
+$txt['menuorder_upsuccess'] = '"%s" fue movido arriba.';
+$txt['menuorder_downsuccess'] = '"%s" fue movido abajo.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.spanish_latin-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Orden del Menú';
+$txt['menuorder_howsort?'] = 'Como quieres ordenar los objetos del menú?';
+$txt['menuorder_sortbybuttons'] = 'Botones Arriba/Abajo';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'esconder';
+$txt['menuorder_show'] = 'mostrar';
+$txt['menuorder_edit'] = 'editar';
+$txt['menuorder_up'] = 'arriba';
+$txt['menuorder_down'] = 'abajo';
+$txt['menuorder_save'] = 'Guardar';
+$txt['menuorder_saveorder'] = 'Guardar Orden';
+$txt['menuorder_sortchanged'] = 'Método de ordenado del menú fue cambiado a "%s".';
+$txt['menuorder_jssortsuccess'] = 'Objeto del menú fue guardado.';
+$txt['menuorder_hidesuccess'] = '"%s" fue escondido.';
+$txt['menuorder_showsuccess'] = '"%s" es ahora visible.';
+$txt['menuorder_renamesuccess'] = '"%s" fue renombrado a "%s".';
+$txt['menuorder_upsuccess'] = '"%s" fue movido arriba.';
+$txt['menuorder_downsuccess'] = '"%s" fue movido abajo.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

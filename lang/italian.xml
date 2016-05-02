@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.italian.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Ordine del Menu';
+$txt['menuorder_howsort?'] = 'Come vuoi ordinare questi elementi?';
+$txt['menuorder_sortbybuttons'] = 'Bottoni Su/Gi&ugrave;';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'nascondi';
+$txt['menuorder_show'] = 'mostra';
+$txt['menuorder_edit'] = 'edita';
+$txt['menuorder_up'] = 'su';
+$txt['menuorder_down'] = 'gi&ugrave;';
+$txt['menuorder_save'] = 'Salva';
+$txt['menuorder_saveorder'] = 'Salva l\'ordinamento';
+$txt['menuorder_sortchanged'] = 'L\'ordinamento del menu &egrave; stato cambiato in "%s".';
+$txt['menuorder_jssortsuccess'] = 'L\'ordinamento degli elementi del menu &egrave; stato salvato.';
+$txt['menuorder_hidesuccess'] = '"%s" &egrave; stato nascosto.';
+$txt['menuorder_showsuccess'] = '"%s" &egrave; ora visibile.';
+$txt['menuorder_renamesuccess'] = '"%s" &egrave; stato rinominato in "%s".';
+$txt['menuorder_upsuccess'] = '"%s" &egrave; stato spostato su.';
+$txt['menuorder_downsuccess'] = '"%s" &egrave; stato spostato gi&ugrave;.';
+// end "Menu Order" edit //
+//]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.italian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Ordine del Menu';
+$txt['menuorder_howsort?'] = 'Come vuoi ordinare questi elementi?';
+$txt['menuorder_sortbybuttons'] = 'Bottoni Su/Gi&ugrave;';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'nascondi';
+$txt['menuorder_show'] = 'mostra';
+$txt['menuorder_edit'] = 'edita';
+$txt['menuorder_up'] = 'su';
+$txt['menuorder_down'] = 'gi&ugrave;';
+$txt['menuorder_save'] = 'Salva';
+$txt['menuorder_saveorder'] = 'Salva l\'ordinamento';
+$txt['menuorder_sortchanged'] = 'L\'ordinamento del menu &egrave; stato cambiato in "%s".';
+$txt['menuorder_jssortsuccess'] = 'L\'ordinamento degli elementi del menu &egrave; stato salvato.';
+$txt['menuorder_hidesuccess'] = '"%s" &egrave; stato nascosto.';
+$txt['menuorder_showsuccess'] = '"%s" &egrave; ora visibile.';
+$txt['menuorder_renamesuccess'] = '"%s" &egrave; stato rinominato in "%s".';
+$txt['menuorder_upsuccess'] = '"%s" &egrave; stato spostato su.';
+$txt['menuorder_downsuccess'] = '"%s" &egrave; stato spostato gi&ugrave;.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

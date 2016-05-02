@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.danish.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menu-placering';
+$txt['menuorder_howsort?'] = 'Hvilken teknologi ønsker du at anvende til at placerer menupunkterne?';
+$txt['menuorder_sortbybuttons'] = 'Op/Ned Knapper';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'skjul';
+$txt['menuorder_show'] = 'vis';
+$txt['menuorder_edit'] = 'omdøb';
+$txt['menuorder_up'] = 'op';
+$txt['menuorder_down'] = 'ned';
+$txt['menuorder_save'] = 'Gem';
+$txt['menuorder_saveorder'] = 'Gem placering';
+$txt['menuorder_sortchanged'] = 'Menupunkternes placering ændres nu via "%s".';
+$txt['menuorder_jssortsuccess'] = 'Menupunkternes placering er nu blevet gemt.';
+$txt['menuorder_hidesuccess'] = '"%s" er nu skjult.';
+$txt['menuorder_showsuccess'] = '"%s" bliver nu vist.';
+$txt['menuorder_renamesuccess'] = '"%s" er blevet omdøbt til "%s".';
+$txt['menuorder_upsuccess'] = '"%s" er flyttet op.';
+$txt['menuorder_downsuccess'] = '"%s" er flyttet ned.';
+// end "Menu Order" edit //
+//]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.danish-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menu-placering';
+$txt['menuorder_howsort?'] = 'Hvilken teknologi ønsker du at anvende til at placerer menupunkterne?';
+$txt['menuorder_sortbybuttons'] = 'Op/Ned Knapper';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'skjul';
+$txt['menuorder_show'] = 'vis';
+$txt['menuorder_edit'] = 'omdøb';
+$txt['menuorder_up'] = 'op';
+$txt['menuorder_down'] = 'ned';
+$txt['menuorder_save'] = 'Gem';
+$txt['menuorder_saveorder'] = 'Gem placering';
+$txt['menuorder_sortchanged'] = 'Menupunkternes placering ændres nu via "%s".';
+$txt['menuorder_jssortsuccess'] = 'Menupunkternes placering er nu blevet gemt.';
+$txt['menuorder_hidesuccess'] = '"%s" er nu skjult.';
+$txt['menuorder_showsuccess'] = '"%s" bliver nu vist.';
+$txt['menuorder_renamesuccess'] = '"%s" er blevet omdøbt til "%s".';
+$txt['menuorder_upsuccess'] = '"%s" er flyttet op.';
+$txt['menuorder_downsuccess'] = '"%s" er flyttet ned.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

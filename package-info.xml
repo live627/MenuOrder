@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<install for="2.0 RC2, 2.0 RC3, 2.0 RC4, 2.0">
+		<readme parsebbc="true">menu_order_0-2.txt</readme>
+		<modification>install.xml</modification>
+		<modification>lang/english.xml</modification>
+		<modification>lang/english_british.xml</modification>
+		<modification>lang/danish.xml</modification>
+		<modification>lang/german.xml</modification>
+		<modification>lang/italian.xml</modification>
+		<modification>lang/russian.xml</modification>
+		<modification>lang/russian-utf8.xml</modification>
+		<modification>lang/romanian.xml</modification>
+		<modification>lang/arabic-utf8.xml</modification>
+		<require-file name="Sources/MenuOrder.php" destination="$sourcedir" />
+		<require-file name="Themes/MenuOrder.template.php" destination="$themedir" />
+		<require-file name="Themes/menuorder.js" destination="$themedir/scripts" />
+		<require-file name="Themes/menuorder.php" destination="$themedir/scripts" />
+	</install>
+
+	<uninstall for="2.0 RC2, 2.0 RC3, 2.0 RC4, 2.0">
+		<modification reverse="true">install.xml</modification>
+		<modification reverse="true">lang/english.xml</modification>
+		<modification reverse="true">lang/english_british.xml</modification>
+		<modification reverse="true">lang/danish.xml</modification>
+		<modification reverse="true">lang/german.xml</modification>
+		<modification reverse="true">lang/italian.xml</modification>
+		<modification reverse="true">lang/russian.xml</modification>
+		<modification reverse="true">lang/russian-utf8.xml</modification>
+		<modification reverse="true">lang/romanian.xml</modification>
+		<modification reverse="true">lang/arabic-utf8.xml</modification>
+		<remove-file name="$sourcedir/MenuOrder.php" />
+		<remove-file name="$themedir/MenuOrder.template.php" />
+		<remove-file name="$themedir/scripts/menuorder.js" />
+		<remove-file name="$themedir/scripts/menuorder.php" />
+	</uninstall>
+</package-info>

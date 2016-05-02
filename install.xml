@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="before"><![CDATA[
+	$context['menu_buttons'] = $menu_buttons;
+]]></search>
+			<add><![CDATA[
+	// begin "Menu Order" edit //
+	if (!empty($modSettings['menuorder'])) {
+		$menuorder = unserialize($modSettings['menuorder']);
+		$newmenu = array();
+		foreach($menuorder as $key => $value) {
+			if (isset($context['menu_buttons'][$key]) && $context['menu_buttons'][$key]['show'] == true) {
+				$newmenu[$key] = $context['menu_buttons'][$key];
+			}
+		}
+		foreach($context['menu_buttons'] as $key => $value) {
+			if (!array_search($key, $newmenu)) {
+				$newmenu[$key] = $value;
+			}
+		}
+		$context['menu_buttons'] = $newmenu;
+	}
+	if (!empty($modSettings['menuorder_titles'])) {
+		$menutitles = unserialize($modSettings['menuorder_titles']);
+		foreach($menutitles as $key => $value) {
+			if (isset($context['menu_buttons'][$key]['title']) && $value != '_no_change_') {
+				$context['menu_buttons'][$key]['title'] = $value;
+				$context['menu_buttons'][$key]['no_change'] = false;
+			} else if ($value == '_no_change_') {
+				$context['menu_buttons'][$key]['no_change'] = true;
+			} else {
+				$context['menu_buttons'][$key]['no_change'] = false;
+			}
+		}
+	}
+	if (!empty($modSettings['menuorder_visible'])) {
+		$menuorder_visible = unserialize($modSettings['menuorder_visible']);
+		if (empty($_GET['action']) || $_GET['action'] != 'admin') {
+			foreach($menuorder_visible as $key => $value) {
+				if ($value == false) {
+					unset($context['menu_buttons'][$key]);
+				}
+			}
+		}
+	} else {
+		$menuorder_visible = array();
+		if (!empty($menutitles)) {
+			foreach($menutitles as $key => $value) {
+				$menuorder_visible[$key] = true;
+			}
+		}
+	}
+	$context['menuorder_visible'] = $menuorder_visible;
+	
+	foreach($context['menu_buttons'] as $key => $button) {
+		$context['menuorder_show'][$key] = true;
+	}
+	
+	foreach($context['menu_buttons'] as $key => $button) {
+		if (empty($button['href'])) {
+			unset($context['menu_buttons'][$key]);
+		}
+	}
+	// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$sourcedir/Admin.php">
+		<operation>
+			<search position="after"><![CDATA[
+				'modsettings' => array(]]></search>
+			<add><![CDATA[
+				// begin "Menu Order" edit //
+				'menu_order' => array(
+					'label' => $txt['menu_order'],
+					'file' => 'MenuOrder.php',
+					'function' => 'MenuOrder',
+					'icon' => 'server.gif',
+				),
+				// end "Menu Order" edit //
+				]]></add>
+		</operation>
+	</file>
+
+</modification>

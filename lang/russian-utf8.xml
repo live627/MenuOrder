@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.russian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Изменение пунктов меню';
+$txt['menuorder_howsort?'] = 'Выберите метод сортировки пунктов меню';
+$txt['menuorder_sortbybuttons'] = 'Кнопки Вверх/Вниз';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'скрыть';
+$txt['menuorder_show'] = 'показать';
+$txt['menuorder_edit'] = 'правка';
+$txt['menuorder_up'] = 'вверх';
+$txt['menuorder_down'] = 'вниз';
+$txt['menuorder_save'] = 'Сохранить';
+$txt['menuorder_saveorder'] = 'Сохранить порядок';
+$txt['menuorder_sortchanged'] = 'Метод сортировки меню был изменён на "%s".';
+$txt['menuorder_jssortsuccess'] = 'Порядок пунктов меню сохранён.';
+$txt['menuorder_hidesuccess'] = 'Пункт "%s" скрыт.';
+$txt['menuorder_showsuccess'] = 'Пункт "%s" теперь виден.';
+$txt['menuorder_renamesuccess'] = 'Пункт "%s" был переименован в "%s".';
+$txt['menuorder_upsuccess'] = 'Пункт "%s" был перемещён вверх.';
+$txt['menuorder_downsuccess'] = 'Пункт "%s" был перемещён вниз.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

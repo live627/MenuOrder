@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.german.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menü Reihenfolge'; 
+$txt['menuorder_howsort?'] = 'Wie wollen Sie Ihre Menüpunkte ordnen?'; 
+$txt['menuorder_sortbybuttons'] = 'Oben-/ Unten-Schaltflächen'; 
+$txt['menuorder_sortbyjs'] = 'Drag & Drop (Javascript)'; 
+$txt['menuorder_hide'] = 'verstecken'; 
+$txt['menuorder_show'] = 'anzeigen'; 
+$txt['menuorder_edit'] = 'bearbeiten'; 
+$txt['menuorder_up'] = 'nach oben'; 
+$txt['menuorder_down'] = 'nach unten'; 
+$txt['menuorder_save'] = 'Speichern'; 
+$txt['menuorder_saveorder'] = 'Reihenfolge speichern'; 
+$txt['menuorder_sortchanged'] = 'Die Methode der Menü Reihenfolge wurde geändert: "%s".'; 
+$txt['menuorder_jssortsuccess'] = 'Die Reihenfolge der Menüpunkte wurde gespeichert.'; 
+$txt['menuorder_hidesuccess'] = '"%s" wurde versteckt.'; 
+$txt['menuorder_showsuccess'] = '"%s" ist jetzt sichtbar.'; 
+$txt['menuorder_renamesuccess'] = '"%s" wurde umbenannt in "%s".'; 
+$txt['menuorder_upsuccess'] = '"%s" wurde nach oben verschoben.'; 
+$txt['menuorder_downsuccess'] = '"%s" wurde nach unten verschoben.';
+// end "Menu Order" edit //
+//]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.german-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menü Reihenfolge'; 
+$txt['menuorder_howsort?'] = 'Wie wollen Sie Ihre Menüpunkte ordnen?'; 
+$txt['menuorder_sortbybuttons'] = 'Oben-/ Unten-Schaltflächen'; 
+$txt['menuorder_sortbyjs'] = 'Drag & Drop (Javascript)'; 
+$txt['menuorder_hide'] = 'verstecken'; 
+$txt['menuorder_show'] = 'anzeigen'; 
+$txt['menuorder_edit'] = 'bearbeiten'; 
+$txt['menuorder_up'] = 'nach oben'; 
+$txt['menuorder_down'] = 'nach unten'; 
+$txt['menuorder_save'] = 'Speichern'; 
+$txt['menuorder_saveorder'] = 'Reihenfolge speichern'; 
+$txt['menuorder_sortchanged'] = 'Die Methode der Menü Reihenfolge wurde geändert: "%s".'; 
+$txt['menuorder_jssortsuccess'] = 'Die Reihenfolge der Menüpunkte wurde gespeichert.'; 
+$txt['menuorder_hidesuccess'] = '"%s" wurde versteckt.'; 
+$txt['menuorder_showsuccess'] = '"%s" ist jetzt sichtbar.'; 
+$txt['menuorder_renamesuccess'] = '"%s" wurde umbenannt in "%s".'; 
+$txt['menuorder_upsuccess'] = '"%s" wurde nach oben verschoben.'; 
+$txt['menuorder_downsuccess'] = '"%s" wurde nach unten verschoben.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

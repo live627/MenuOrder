@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[//
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menu Order';
+$txt['menuorder_howsort?'] = 'How do you want to sort menu items?';
+$txt['menuorder_sortbybuttons'] = 'Up/Down Buttons';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'hide';
+$txt['menuorder_show'] = 'show';
+$txt['menuorder_edit'] = 'edit';
+$txt['menuorder_up'] = 'up';
+$txt['menuorder_down'] = 'down';
+$txt['menuorder_save'] = 'Save';
+$txt['menuorder_saveorder'] = 'Save Order';
+$txt['menuorder_sortchanged'] = 'Menu sort method has been changed to "%s".';
+$txt['menuorder_jssortsuccess'] = 'Menu item order has been saved.';
+$txt['menuorder_hidesuccess'] = '"%s" has been hidden.';
+$txt['menuorder_showsuccess'] = '"%s" is now visible.';
+$txt['menuorder_renamesuccess'] = '"%s" has been renamed to "%s".';
+$txt['menuorder_upsuccess'] = '"%s" has been moved up.';
+$txt['menuorder_downsuccess'] = '"%s" has been moved down.';
+// end "Menu Order" edit //
+//]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Menu Order';
+$txt['menuorder_howsort?'] = 'How do you want to sort menu items?';
+$txt['menuorder_sortbybuttons'] = 'Up/Down Buttons';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'hide';
+$txt['menuorder_show'] = 'show';
+$txt['menuorder_edit'] = 'edit';
+$txt['menuorder_up'] = 'up';
+$txt['menuorder_down'] = 'down';
+$txt['menuorder_save'] = 'Save';
+$txt['menuorder_saveorder'] = 'Save Order';
+$txt['menuorder_sortchanged'] = 'Menu sort method has been changed to "%s".';
+$txt['menuorder_jssortsuccess'] = 'Menu item order has been saved.';
+$txt['menuorder_hidesuccess'] = '"%s" has been hidden.';
+$txt['menuorder_showsuccess'] = '"%s" is now visible.';
+$txt['menuorder_renamesuccess'] = '"%s" has been renamed to "%s".';
+$txt['menuorder_upsuccess'] = '"%s" has been moved up.';
+$txt['menuorder_downsuccess'] = '"%s" has been moved down.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

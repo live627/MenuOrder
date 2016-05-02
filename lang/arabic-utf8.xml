@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.arabic-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'تنسيق الإختيارات';
+$txt['menuorder_howsort?'] = 'كيف تريد تنسيق مواد الإختيارات?';
+$txt['menuorder_sortbybuttons'] = 'أعلى/أسفل مفاتيح';
+$txt['menuorder_sortbyjs'] = 'جافا سكريبت';
+$txt['menuorder_hide'] = 'إخفاء';
+$txt['menuorder_show'] = 'عرض';
+$txt['menuorder_edit'] = '[ تعديل ]';
+$txt['menuorder_up'] = 'أعلى';
+$txt['menuorder_down'] = 'أسفل';
+$txt['menuorder_save'] = 'حفظ';
+$txt['menuorder_saveorder'] = 'حفظ التنسيق';
+$txt['menuorder_sortchanged'] = 'عملية تنسيق الإختيارت تم تغييرها الى "%s".';
+$txt['menuorder_jssortsuccess'] = 'تم حفظ تنسيق مواد الإختيارات.';
+$txt['menuorder_hidesuccess'] = '"%s" تم إخفاءه.';
+$txt['menuorder_showsuccess'] = '"%s" الآن هو ظاهر.';
+$txt['menuorder_renamesuccess'] = '"%s" تمت إعدة تسميته الى "%s".';
+$txt['menuorder_upsuccess'] = '"%s" تم تحريكه الى الأعلى.';
+$txt['menuorder_downsuccess'] = '"%s" تم تحريكه الى الأسفل.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>

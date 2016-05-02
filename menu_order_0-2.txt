@@ -1,0 +1,110 @@
+[center][font=times new roman][size=24pt][color=#654321]Menu Order[/color][/size][/font]
+[table]
+[tr][td][right][b]Created By:[/b] [/right][/td][td][url=http://www.simplemachines.org/community/index.php?action=profile;u=232950]the7thGhost[/url]
+([url=http://custom.simplemachines.org/mods/index.php?action=profile;u=232950]View my other mods[/url])[/td][/tr]
+[tr][td][right][b]Latest Version:[/b] [/right][/td][td]0.2.5[/td][/tr]
+[tr][td][right][b]Languages:[/b] [/right][/td][td][img]http://www.simplemachines.org/site_images/lang/english.gif[/img] [img]http://www.simplemachines.org/site_images/lang/english_british.gif[/img] [img]http://www.simplemachines.org/site_images/lang/arabic.gif[/img] [img]http://www.simplemachines.org/site_images/lang/danish.gif[/img] [img]http://www.simplemachines.org/site_images/lang/german.gif[/img] [img]http://www.simplemachines.org/site_images/lang/italian.gif[/img] [img]http://www.simplemachines.org/site_images/lang/romanian.gif[/img] [img]http://www.simplemachines.org/site_images/lang/spanish.gif[/img] [img]http://www.simplemachines.org/site_images/lang/russian.gif[/img] [img]http://www.simplemachines.org/site_images/lang/turkish.gif[/img][/td][/tr]
+[/table]
+[url=http://bugtracker.codematicaly.com/search.php?project_id=2&sortby=last_updated&dir=DESC&hide_status_id=-2]Mod Bugtracker[/url] | [url=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10296963]Donate[/url]
+[/center]
+
+[font=times new roman][size=14pt][color=#654321]Summary[/color][/size][/font]
+Let's you rearrange the main menu buttons on the top of the page to show up in a different order, and change the text they have. For example, if you want to put "Help" after "Logout," or if you want to change "Home" to "Forum."
+
+[b]If the text of a certain buttons should not be changed, set it to "_no_change_".[/b] This will mainly be used when you have a button with dynamically changing text, like "My Messages".
+
+[font=times new roman][size=14pt][color=#654321]Installing[/color][/size][/font]
+The package manager should be used to install this mod. If for some reason that doesn't work, you can still do a manual install, but several files will need changed.
+
+IMPORTANT: Older versions should be un-installed before installing a newer version! There is no upgrader. Don't worry, your settings will not be lost.
+
+[font=times new roman][size=14pt][color=#654321]Support[/color][/size][/font]
+Questions should be posted to the mod support topic. Anything that is a bug or feature request should be reported to the [url=http://bugtracker.codematicaly.com/search.php?project_id=2&sortby=last_updated&dir=DESC&hide_status_id=-2]Mod Bugtracker[/url].
+
+[font=times new roman][size=14pt][color=#654321]Translations[/color][/size][/font]
+Translators are wanted! If you know a language this mod does not support, please translate and post to the mod support topic. All languages are welcome!
+[code]
+$txt['menu_order'] = 'Menu Order';
+$txt['menuorder_howsort?'] = 'How do you want to sort menu items?';
+$txt['menuorder_sortbybuttons'] = 'Up/Down Buttons';
+$txt['menuorder_sortbyjs'] = 'Javascript';
+$txt['menuorder_hide'] = 'hide';
+$txt['menuorder_show'] = 'show';
+$txt['menuorder_edit'] = 'edit';
+$txt['menuorder_up'] = 'up';
+$txt['menuorder_down'] = 'down';
+$txt['menuorder_save'] = 'Save';
+$txt['menuorder_saveorder'] = 'Save Order';
+$txt['menuorder_sortchanged'] = 'Menu sort method has been changed to "%s".';
+$txt['menuorder_jssortsuccess'] = 'Menu item order has been saved.';
+$txt['menuorder_hidesuccess'] = '"%s" has been hidden.';
+$txt['menuorder_showsuccess'] = '"%s" is now visible.';
+$txt['menuorder_renamesuccess'] = '"%s" has been renamed to "%s".';
+$txt['menuorder_upsuccess'] = '"%s" has been moved up.';
+$txt['menuorder_downsuccess'] = '"%s" has been moved down.';
+[/code]
+
+[font=times new roman][size=14pt][color=#654321]Changelog[/color][/size][/font]
+[size=8pt]Numbers are bug IDs in the bugtracker[/size]
+[b]0.2.6[/b]
+New Feature:    SMF 2.0 Final compatibility
+
+[b]0.2.5[/b]
+New Feature:    SMF 2.0 RC4 compatibility
+
+[b]0.2.4[/b]
+20: Added Language: German
+21: Added Language: Danish
+22: Added Language: Italian
+
+[b]0.2.3[/b]
+18: New Feature:    SMF 2.0 RC3 compatibility
+16: Added Language: Spanish
+
+[b]0.2.2[/b]
+15: Bugfix:         Errors in Error Log
+
+[b]0.2.1[/b]
+12: Bugfix:         _no_change_ bug
+11: Text:           Update Romanian text
+10: Text:           Update Russian text
+9:  Added Language: Arabic Translation
+
+[b]0.2[/b]
+4:  New Feature:    Hide menu items
+5:  New Feature:    Javascript menu sort
+7:  Bugfix:         Dynamic menu item text doesn't show
+8:  Added Language: Russian
+3:  Added Language: Romanian
+
+[font=times new roman][size=14pt][color=#654321]Files modified by Menu Order[/color][/size][/font]
+[b]Modified:[/b]
+./Sources/Subs.php
+./Sources/Admin.php
+./Themes/default/languages/Modifications.english.php
+
+[b]New Files:[/b]
+./Sources/MenuOrder.php
+./Themes/default/MenuOrder.template.php
+./Themes/default/scripts/menuorder.js
+./Themes/default/scripts/menuorder.php
+
+[b]Optional:[/b]
+./Themes/default/languages/Modifications.english-utf8.php
+./Themes/default/languages/Modifications.english_british.php
+./Themes/default/languages/Modifications.english_british-utf8.php
+./Themes/default/languages/Modifications.arabic-utf8.php
+./Themes/default/languages/Modifications.danish.php
+./Themes/default/languages/Modifications.danish-utf8.php
+./Themes/default/languages/Modifications.german.php
+./Themes/default/languages/Modifications.german-utf8.php
+./Themes/default/languages/Modifications.italian.php
+./Themes/default/languages/Modifications.italian-utf8.php
+./Themes/default/languages/Modifications.romanian.php
+./Themes/default/languages/Modifications.romanian-utf8.php
+./Themes/default/languages/Modifications.spanish_es.php
+./Themes/default/languages/Modifications.spanish_es-utf8.php
+./Themes/default/languages/Modifications.spanish_latin.php
+./Themes/default/languages/Modifications.spanish_latin-utf8.php
+./Themes/default/languages/Modifications.russian.php
+./Themes/default/languages/Modifications.russian-utf8.php

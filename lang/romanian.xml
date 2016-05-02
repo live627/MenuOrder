@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>Menu Order</name>
+	<id>the7thGhost:MenuOrder</id>
+	<type>modification</type>
+	<version>0.2.6</version>
+
+	<file name="$languagedir/Modifications.romanian.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Ordonare Meniu';
+$txt['menuorder_howsort?'] = 'Cum doriti sa ordonati meniul?';
+$txt['menuorder_sortbybuttons'] = 'Butoane Sus/Jos';
+$txt['menuorder_sortbyjs'] = 'Script java';
+$txt['menuorder_hide'] = 'ascunde';
+$txt['menuorder_show'] = 'arata';
+$txt['menuorder_edit'] = 'modifica';
+$txt['menuorder_up'] = 'sus';
+$txt['menuorder_down'] = 'jos';
+$txt['menuorder_save'] = 'Salveaza';
+$txt['menuorder_saveorder'] = 'Salveaza Ordinea';
+$txt['menuorder_sortchanged'] = 'Metoda de ordonare a meniului a fost schimbata in "%s".';
+$txt['menuorder_jssortsuccess'] = 'Ordinea meniului a fost salvata.';
+$txt['menuorder_hidesuccess'] = '"%s" a fost ascuns.';
+$txt['menuorder_showsuccess'] = '"%s" este acum vizibil.';
+$txt['menuorder_renamesuccess'] = '"%s" a fost modificat in "%s".';
+$txt['menuorder_upsuccess'] = '"%s" a fost mutat sus.';
+$txt['menuorder_downsuccess'] = '"%s" a fost mutat jos.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.romanian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// begin "Menu Order" edit //
+$txt['menu_order'] = 'Ordonare Meniu';
+$txt['menuorder_howsort?'] = 'Cum doriti sa ordonati meniul?';
+$txt['menuorder_sortbybuttons'] = 'Butoane Sus/Jos';
+$txt['menuorder_sortbyjs'] = 'Script java';
+$txt['menuorder_hide'] = 'ascunde';
+$txt['menuorder_show'] = 'arata';
+$txt['menuorder_edit'] = 'modifica';
+$txt['menuorder_up'] = 'sus';
+$txt['menuorder_down'] = 'jos';
+$txt['menuorder_save'] = 'Salveaza';
+$txt['menuorder_saveorder'] = 'Salveaza Ordinea';
+$txt['menuorder_sortchanged'] = 'Metoda de ordonare a meniului a fost schimbata in "%s".';
+$txt['menuorder_jssortsuccess'] = 'Ordinea meniului a fost salvata.';
+$txt['menuorder_hidesuccess'] = '"%s" a fost ascuns.';
+$txt['menuorder_showsuccess'] = '"%s" este acum vizibil.';
+$txt['menuorder_renamesuccess'] = '"%s" a fost modificat in "%s".';
+$txt['menuorder_upsuccess'] = '"%s" a fost mutat sus.';
+$txt['menuorder_downsuccess'] = '"%s" a fost mutat jos.';
+// end "Menu Order" edit //
+]]></add>
+		</operation>
+	</file>
+
+</modification>
